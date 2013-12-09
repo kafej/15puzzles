@@ -5,17 +5,23 @@
 	<title>15 puzzle</title>
 	<meta name="description" content="Simple fifteen game">
 
-	<link href="css/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/default.css" rel="stylesheet" type="text/css" /> <!-- You will need this to change appearance -->
 
-	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.js" type="text/javascript"></script> <!-- Standard jQuery lb -->
 	<script src="js/fifteengame.js" type="text/javascript"></script> <!-- You need to add this -->
 	
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('.cube').cube(); //You need to add cube() function to any element
+			$('.cube').cube({
+				puzzles: '15', //15 or 8 puzzles
+				MoveMSG: true, //How many movements msg
+				CustomMoveMSG: 'The movement number: ', //Custom msg for numbers of movements (if MoveMSG=fales then no exist)
+				VictoryMSGAlert: true, //1. true = when completed-alert with VictoryMSG message/ 2. false = when completed-will append div container with VictoryMSG message to "victorymsg" class
+				VictoryMSG: 'CONGRATULATIONS! YOU DID IT!!', //custom message when completed
+				image: true //when false you can delete cubes from img/klocki and change the appearance of lumps by css class=cubes
+			}); //You need to add cube() function to any element
 		});
 	</script>
-
 </head>
 <body>
 	<div class="cube"></div>

@@ -8,3 +8,35 @@ a {
 a img {
 	border:none;
 }
+/*Cube-main table*/
+#cubetable {
+
+}
+/*Cube-main td*/
+.cubetable {
+
+}
+/*Cube-cubes You can change the appearance of cubes when image is set to false*/
+.cubes {
+	background-color: #858585;
+	font-size: 16px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	margin-top: -5px;
+	text-align: center;
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid;
+}
+/*Cube-cubes You can change the appearance of cube with "0" when image is set to false*/
+.zero {
+	background-color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+/*Cube-movements message*/
+#msg {
+
+}
