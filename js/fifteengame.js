@@ -148,7 +148,7 @@ $.fn.cube = function(options) {
 	});
 
 	if (options.image == false) {
-		$( ".cubein #pz" ).trigger( "click" );
+		$(".cubein #pz").trigger("click");
 		moveNumber=0;
 		$('#CubeVictoryMSG').html(options.CustomMoveMSG+'<b>'+moveNumber+'</b>');
 	}
