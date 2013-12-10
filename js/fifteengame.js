@@ -64,7 +64,7 @@ $.fn.cube = function(options) {
 	function ShowMoveNumber() //Show current numbers of moves
 	{
 		if (options.MoveMSG){
-			$('#msg').html(options.CustomMoveMSG+'<b>'+moveNumber+'</b>');
+			$('#CubeVictoryMSG').html(options.CustomMoveMSG+'<b>'+moveNumber+'</b>');
 		}
 	}
 	
@@ -114,7 +114,7 @@ $.fn.cube = function(options) {
 		$row.append('</tr></table>');
 		//Fetch game area.
 		if (options.MoveMSG){
-			$(element).append('<p id="msg"style="padding-bottom:10px;text-align:center;">'+options.CustomMoveMSG+'<b>'+moveNumber+'</b></p>');
+			$(element).append('<p id="CubeVictoryMSG"style="padding-bottom:10px;text-align:center;">'+options.CustomMoveMSG+'<b>'+moveNumber+'</b></p>');
 		}
 		$(element).append($pt);
 	}
@@ -150,6 +150,6 @@ $.fn.cube = function(options) {
 	if (options.image == false) {
 		$( ".cubein #pz" ).trigger( "click" );
 		moveNumber=0;
-		$('#msg').html(options.CustomMoveMSG+'<b>'+moveNumber+'</b>');
+		$('#CubeVictoryMSG').html(options.CustomMoveMSG+'<b>'+moveNumber+'</b>');
 	}
 };

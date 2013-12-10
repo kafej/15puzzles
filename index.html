@@ -12,14 +12,14 @@
 	
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('.cube').cube({
+			$('.cube').cube({ //You need to add cube() function to any element
 				puzzles: '15', //15 or 8 puzzles
 				MoveMSG: true, //How many movements msg
 				CustomMoveMSG: 'The movement number: ', //Custom msg for numbers of movements (if MoveMSG=fales then no exist)
 				VictoryMSGAlert: true, //1. true = when completed-alert with VictoryMSG message/ 2. false = when completed-will append div container with VictoryMSG message to "victorymsg" class
 				VictoryMSG: 'CONGRATULATIONS! YOU DID IT!!', //custom message when completed
 				image: true //when false you can delete cubes from img/klocki and change the appearance of lumps by css class=cubes
-			}); //You need to add cube() function to any element
+			});
 		});
 	</script>
 </head>
